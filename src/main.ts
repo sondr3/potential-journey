@@ -1,3 +1,5 @@
+const _ = require("lodash");
+
 import { ErrorMapper } from "utils/ErrorMapper";
 
 // When compiling TS to JS and bundling with rollup, the line numbers and file names in error messages change
@@ -11,4 +13,7 @@ export const loop = ErrorMapper.wrapLoop(() => {
       delete Memory.creeps[name];
     }
   }
+
+  const harvesters = _.filter(Game.creeps, (creep: Creep) => creep.memory.role == "harvester");
+  console.log(`Harvesters active: ${harvesters.length}`);
 });

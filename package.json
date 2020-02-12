@@ -15,7 +15,8 @@
     "test-integration": "npm run build && rollup -c rollup.test-integration-config.js && mocha dist/test-integration.bundle.js",
     "watch-main": "rollup -cw --environment DEST:main",
     "watch-pserver": "rollup -cw --environment DEST:pserver",
-    "watch-sim": "rollup -cw --environment DEST:sim"
+    "watch-sim": "rollup -cw --environment DEST:sim",
+    "copy": "cp ./dist/main.js /home/sondre/.config/Screeps/scripts/167_172_225_126___21025/default/main.js"
   },
   "repository": {
     "type": "git",
