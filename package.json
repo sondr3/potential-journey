@@ -18,17 +18,8 @@
     "watch-sim": "rollup -cw --environment DEST:sim",
     "copy": "cp ./dist/main.js /home/sondre/.config/Screeps/scripts/167_172_225_126___21025/default/main.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/screepers/screeps-typescript-starter.git"
-  },
-  "author": "",
-  "license": "Unlicense",
-  "bugs": {
-    "url": "https://github.com/screepers/screeps-typescript-starter/issues"
-  },
-  "homepage": "https://github.com/screepers/screeps-typescript-starter#readme",
   "devDependencies": {
+    "@sondr3/prettier": "^0.1.1",
     "@types/chai": "^4.1.6",
     "@types/lodash": "^3.10.1",
     "@types/mocha": "^5.2.5",
@@ -59,5 +50,6 @@
   },
   "dependencies": {
     "source-map": "~0.6.1"
-  }
+  },
+  "prettier": "@sondr3/prettier"
 }
